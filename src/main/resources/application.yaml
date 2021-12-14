@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      name: butter
+      password: butterxrd
+server:
+  port: 8076
+eureka:
+  client:
+    register-with-eureka: false
+    #    单机版，单点
+    fetch-registry: false
+    service-url:
+      defaultZone: http://@localhost:8076/eureka
+#      defaultZone: http://butter:butterxrd@localhost:8076/eureka
